@@ -28,7 +28,7 @@
     - `Hourly data`: All hourly records within the range.
     - `Daily data`: Only the daily snapshots (at or near `9:00 AM`) within the range.
 - Users can subscribe to receive updates on a keyword’s search volume, with two subscription types:
-    - `Daily Subscription`: Users get updates only for the daily snapshot (at or near 9:08 AM). They do not receive hourly data.
+    - `Daily Subscription`: Users get updates only for the daily snapshot (at or near `9:00 AM`). They do not receive hourly data.
     - `Hourly Subscription`: Users get updates for every hourly data point, which naturally includes the daily snapshot since it’s part of the hourly records.
 - Users can subscribe to the overlap timeline of a keyword and will see the union range of them.
 
