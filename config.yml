@@ -1,0 +1,6 @@
+MYSQL_CONNECT:
+  USERNAME: admin
+  PASSWORD: admin
+  HOST: localhost
+  PORT: 3306
+  DATABASE: search_term_db
