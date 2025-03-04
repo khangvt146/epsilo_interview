@@ -325,9 +325,6 @@ with open("sql/procedure.sql", "r") as file:
 mysql.execute_sql_command(sql_script)
 logger.info("Initialize database procedure successful")
 
-mysql.execute_sql_command("call UpdateDailySearchVolumes()")
-logger.info("Running database procedure successful")
-
 # Step 3: Generate sample seach volumes data
 df_keywords = generate_sample_keywords_data()
 df_keyword_search_volume, df_remove_data = generate_sample_search_vols_data(df_keywords)
@@ -348,3 +345,7 @@ logger.info("Insert data into `users` table successful")
 
 mysql.insert_to_table("users_subscription", df_total_users_sub)
 logger.info("Insert data into `users_subscription` table successful")
+
+# Step 5: Running procedures
+mysql.execute_sql_command("call UpdateDailySearchVolumes()")
+logger.info("Running database procedure successful")
